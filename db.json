@@ -1,19 +1,22 @@
 {
-  "posts": [
+  "restaurants": [
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "name": "KFC",
+      "address": "Mohali Sector 127",
+      "email": "kfc@restaurant.com"
     },
     {
       "id": 2,
-      "title": "json-server 2",
-      "author": "typicode 2"
+      "name": "BAAGH",
+      "address": "Delhi Sector 27",
+      "email": "baagh@restaurant.com"
     },
     {
-      "id": 3,
-      "title": "json-server 3",
-      "author": "typicode 3"
+      "name": "McDonalds Restaurant",
+      "address": "Chandigarh, Sector 13",
+      "email": "mcd@restaurant.com",
+      "id": 3
     }
   ]
 }
