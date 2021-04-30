@@ -1,4 +1,12 @@
-<p>add-restro works!</p>
+<h1>Enter your restaurant details</h1>
+
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success!</strong> Restaurant details uploaded.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="closeAlert()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
 <form [formGroup] = 'addRestro' (ngSubmit)="collectRestro()">
   <div class="form-group">
     <label for="r_name">Name</label>

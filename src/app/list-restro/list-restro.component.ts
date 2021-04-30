@@ -1,5 +1,6 @@
 /* tslint:disable:no-trailing-whitespace */
-import { Component, OnInit } from '@angular/core';
+// tslint:disable:use-lifecycle-interface
+import {Component, OnInit} from '@angular/core';
 import {RestroService} from '../restro.service';
 
 @Component({
@@ -9,14 +10,21 @@ import {RestroService} from '../restro.service';
 })
 export class ListRestroComponent implements OnInit {
   collection: any = [];
-  constructor(public restro: RestroService) { }
 
+  constructor(public restro: RestroService) {
+  }
 
   ngOnInit(): void {
-    this.restro.getList().subscribe((result) =>  {
+    this.restro.getList().subscribe((result) => {
       this.collection = result;
       console.log(result);
     });
   }
 
+  deleteRestro(item: any): void {
+    this.collection.splice(item - 1, 1);
+    this.restro.deleteRestro(item).subscribe((result) => {
+      console.warn('result', result);
+    });
+  }
 }

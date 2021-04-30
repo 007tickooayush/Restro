@@ -1,1 +1,26 @@
-<p>update-restro works!</p>
+<h1>Edit your restaurant details</h1>
+
+<div *ngIf="alert" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Success!</strong> Restaurant details updated.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close" (click)="closeAlert()">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+<form [formGroup] = 'editRestro' (ngSubmit)="collection()">
+  <div class="form-group">
+    <label for="r_name">Name</label>
+    <input type="text" class="form-control" id="r_name" placeholder="Enter name" formControlName="name">
+  </div>
+  <div class="form-group">
+    <label for="email">EMAIL</label>
+    <input type="text" class="form-control" id="email" placeholder="Enter e-mail" formControlName="email">
+  </div>
+  <div class="form-group">
+    <label for="address">Address</label>
+    <input type="text" class="form-control" id="address" placeholder="Enter address" formControlName="address">
+  </div>
+
+
+  <button type="submit" class="btn btn-primary">Update</button>
+</form>

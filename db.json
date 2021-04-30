@@ -7,16 +7,34 @@
       "email": "kfc@restaurant.com"
     },
     {
-      "id": 2,
-      "name": "BAAGH",
-      "address": "Delhi Sector 27",
-      "email": "baagh@restaurant.com"
+      "name": "BAAGH ",
+      "email": "baagh@restaurant.com",
+      "address": "Chandigarh Sector 46",
+      "id": 2
     },
     {
-      "name": "McDonalds Restaurant",
-      "address": "Chandigarh, Sector 13",
+      "name": "McDonalds ",
       "email": "mcd@restaurant.com",
+      "address": "Chandigarh, Sector 13",
       "id": 3
+    },
+    {
+      "name": "Subway",
+      "email": "subway@test.com",
+      "address": "Sector 12 Chandigarh",
+      "id": 4
+    },
+    {
+      "name": "Corsium",
+      "email": "order@corsium.com",
+      "address": "Greater Mohali",
+      "id": 5
+    },
+    {
+      "name": "Spice",
+      "email": "restraurant@spice.com",
+      "address": "Pune, Kharadi",
+      "id": 6
     }
   ]
 }

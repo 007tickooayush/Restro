@@ -5,7 +5,7 @@
           [attr.aria-expanded]="!isCollapsed">
     <span class="navbar-toggler-icon"></span>
   </button>
-  <div class="collapse navbar-collapse" id="nbAlt">
+  <div class="collapse navbar-collapse" id="nbAlt" [ngbCollapse]="isCollapsed" >
     <div class="navbar-nav">
       <a class="nav-item nav-link" routerLink="add">Add Restaurant</a>
       <a class="nav-item nav-link" routerLink="login">Login</a>

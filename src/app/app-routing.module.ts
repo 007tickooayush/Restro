@@ -17,7 +17,7 @@ const routes: Routes = [
     path: 'list', component: ListRestroComponent
   },
   {
-    path: 'update', component: UpdateRestroComponent
+    path: 'update/:id', component: UpdateRestroComponent
   },
   {
     path: 'login', component: LoginComponent
