@@ -8,9 +8,6 @@ import {RegisterComponent} from './register/register.component';
 
 const routes: Routes = [
   {
-    path: '', component: LoginComponent
-  },
-  {
     path: 'add', component: AddRestroComponent
   },
   {
@@ -24,6 +21,9 @@ const routes: Routes = [
   },
   {
     path: 'register', component: RegisterComponent
+  },
+  {
+    path: '', component: ListRestroComponent
   }
 ];
 

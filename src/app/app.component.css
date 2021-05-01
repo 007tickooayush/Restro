@@ -1,0 +1,12 @@
+footer {
+  position: absolute;
+  padding: 10px;
+  background-color: lightgray;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+  flex: border-box;
+}
+a{
+  margin: 4px;
+}

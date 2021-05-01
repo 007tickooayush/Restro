@@ -1,5 +1,5 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Restro</a>
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand btn btn-outline-success" routerLink="" >Restro</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nbAlt" aria-controls="nbAlt"
           aria-expanded="false" aria-label="Toggle navigation" (click)="isCollapsed = !isCollapsed"
           [attr.aria-expanded]="!isCollapsed">
@@ -7,16 +7,21 @@
   </button>
   <div class="collapse navbar-collapse" id="nbAlt" [ngbCollapse]="isCollapsed" >
     <div class="navbar-nav">
-      <a class="nav-item nav-link" routerLink="add">Add Restaurant</a>
-      <a class="nav-item nav-link" routerLink="login">Login</a>
-      <a class="nav-item nav-link" routerLink="list">List Restaurant</a>
-      <a class="nav-item nav-link" routerLink="register">Register</a>
-      <a class="nav-item nav-link" routerLink="update">Update Restaurant</a>
+      <a class="nav-item nav-link btn btn-outline-info" routerLink="add">Add Restaurant</a>
+      <a class="nav-item nav-link btn btn-outline-info" routerLink="update">Update Restaurant</a>
+      <a class="nav-item nav-link btn btn-outline-info" routerLink="list">List Restaurant</a>
+      <a class="nav-item nav-link btn btn-outline-info" routerLink="login">Login</a>
+      <a class="nav-item nav-link btn btn-outline-info" routerLink="register">Register</a>
     </div>
   </div>
 </nav>
 
-<div class="container">
+<div class="container" >
   <router-outlet></router-outlet>
+  <footer style="text-align: center">
+    <p>Register your restaurant with us.</p>
+
+    <p>&copy; 2021 <strong> Reazon Projects</strong></p>
+  </footer>
 </div>
 

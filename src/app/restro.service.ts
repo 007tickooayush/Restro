@@ -6,7 +6,7 @@ import {HttpClient} from '@angular/common/http';
 })
 export class RestroService {
   url = 'http://localhost:3000/restaurants';
-
+  rootUrl = 'http://localhost:3000/';
   constructor(private http: HttpClient) {}
 
   getList(){
@@ -26,6 +26,9 @@ export class RestroService {
 
   updateRestro(id: any, data: any){
     return this.http.put(`${this.url}/${id}`, data);
+  }
+  registerUser(data: any){
+    return this.http.post(this.rootUrl + 'users', data);
   }
 }
 // @ts-ignore
